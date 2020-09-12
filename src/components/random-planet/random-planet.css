@@ -1,0 +1,38 @@
+p {
+  margin-bottom: 0px;
+}
+
+.random {
+  background-color: rgba(53, 52, 52, 0.877);
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+.preloader {
+	justify-content: center;
+}
+
+.random img {
+  width: 180px;
+  margin: 18px;
+  border-radius: 10px;
+}
+
+.items {
+  margin-left: 30px;
+}
+
+hr {
+  border: 0.5px solid rgba(73, 73, 73, 0.842);
+  margin: 3px 0 9px 0;
+}
+
+.random h3 {
+  margin: 15px 5px;
+}
+
+.random p {
+  font-size: 18px;
+  color: rgb(228, 227, 227);
+  margin-left: 10px;
+}

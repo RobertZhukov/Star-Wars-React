@@ -1,0 +1,15 @@
+p, li {
+	letter-spacing: 0.3px;
+}
+
+li:hover {
+	color: #64a50ea6;
+	cursor: pointer;
+}
+
+
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
