@@ -5,9 +5,10 @@ const PlanetView = ({ planet }) => {
   return (
     <React.Fragment>
       <div>
-        <img
+        <img className='random_planet_img'
           src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}
-        />
+		  alt='random planet'
+		/>
       </div>
       <div className="items">
         <h3>{name}</h3>

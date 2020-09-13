@@ -1,0 +1,18 @@
+#error_planet {
+	margin: 0 0 15px 0;
+	color: rgb(238, 155, 0);
+	text-align: center;
+}
+
+#boom {
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+#error_planet img {
+	width: 90px;
+}
+
+.planet_boom {
+	margin: 10px 0 5px 0;
+}

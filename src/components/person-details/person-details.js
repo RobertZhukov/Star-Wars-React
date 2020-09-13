@@ -6,7 +6,7 @@ const PersonDetails = () => {
   return (
     <div className="random person d-flex">
       <div>
-        <img src="https://starwars-visualguide.com/assets/img/characters/3.jpg" />
+        <img src="https://starwars-visualguide.com/assets/img/characters/3.jpg" alt='person details' />
       </div>
       <div className="items">
         <h3>R2-D2</h3>

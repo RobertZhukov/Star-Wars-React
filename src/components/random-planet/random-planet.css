@@ -12,10 +12,10 @@ p {
 	justify-content: center;
 }
 
-.random img {
-  width: 180px;
-  margin: 18px;
-  border-radius: 10px;
+.random_planet_img {
+	width: 180px;
+	margin: 18px;
+	border-radius: 10px;
 }
 
 .items {
@@ -31,8 +31,7 @@ hr {
   margin: 15px 5px;
 }
 
-.random p {
+.random {
   font-size: 18px;
   color: rgb(228, 227, 227);
-  margin-left: 10px;
 }
