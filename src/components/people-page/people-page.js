@@ -1,18 +1,16 @@
 import React from 'react';
-import Header from '../header/header';
-import RandomPlanet from '../random-planet/random-planet';
 import ErrorIndicator from '../error-indicator/error-indicator';
-import PeoplePage from '../people-page/people-page';
 import ItemList from '../item-list/item-list';
 import PersonDetails from '../person-details/person-details';
 import SwapiServices from '../../services/swapi-services';
 
-import './app.css';
+import './people-page.css';
 
-export default class App extends React.Component {
+export default class PeoplePage extends React.Component {
 	swapiServices = new SwapiServices();
 
 	state = {
+		selectedPerson: 4,
 		hasError: false
 	};
 
@@ -21,7 +19,7 @@ export default class App extends React.Component {
 			selectedPerson: id
 		})
 	};
-	
+
 	componentDidCatch() {
 		this.setState({ hasError: true });
 	};
@@ -31,12 +29,13 @@ export default class App extends React.Component {
 			return <ErrorIndicator />
 		};
 
-		return (
-			<div className='container'>
-				<Header />
-				<RandomPlanet />
-				<PeoplePage />
+		return(
+			<div className='people_planet d-flex'>
+				<ItemList 
+					onItemSelected={(id) => this.onPersonSelected(id)}
+					getData={this.swapiServices.getAllPeople} />
+				<PersonDetails personId={this.state.selectedPerson}/>
 			</div>
-		)	
+		)
 	};
 };

@@ -1,0 +1,8 @@
+/*Media*/
+
+@media(max-width: 582px) {
+	.people_planet {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}

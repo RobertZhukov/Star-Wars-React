@@ -19,7 +19,7 @@ p {
 }
 
 .items {
-  margin-left: 30px;
+  margin: 0 30px;
 }
 
 hr {
@@ -34,4 +34,25 @@ hr {
 .random {
   font-size: 18px;
   color: rgb(228, 227, 227);
+}
+
+/*Media*/
+
+@media(max-width: 480px) {
+	.random {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.random_planet_img {
+		width: 275px;
+	}
+
+	.random .items {
+		margin-bottom: 25px;
+	}
+
+	.random h3 {
+		margin: 5px 5px;
+	}
 }

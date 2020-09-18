@@ -1,14 +1,28 @@
 .itemList {
+	padding: 10px 20px;
 	background-color: rgba(53, 52, 52, 0.877);
-	width: 45%;
+	width: 400px;
 	border: 2px solid rgba(73, 73, 73, 0.842);
  	border-radius: 5px;
-	padding: 5px 10px;
 	list-style: none;
+	margin-bottom: 6px;
 }
 
-.itemList li {
-	padding: 10px;
+/*Media*/
+
+@media(max-width: 767px) {
+	.itemList {
+		width: 200px;
+	}
 }
 
-
+@media(max-width: 582px) {
+	.itemList {
+		width: 95vw;
+		font-size: 20px;
+	}
+	
+	li.itemList {
+		text-align: center;
+	}
+}

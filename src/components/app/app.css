@@ -7,7 +7,9 @@ li:hover {
 	cursor: pointer;
 }
 
-
+ul {
+	padding-inline-start: 0px;
+}
 
 .container {
 	max-width: 1000px;

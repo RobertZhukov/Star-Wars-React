@@ -11,7 +11,12 @@ export default class RandomPlanet extends React.Component {
 
   state = {
     planet: {},
-    loading: true,
+	loading: true,
+	hasError: false
+  };
+
+  componentDidCatch() {
+	  this.setState({ hasError: true });
   };
 
   constructor() {
@@ -46,6 +51,10 @@ export default class RandomPlanet extends React.Component {
 
   render() {
 	const { planet, loading, error } = this.state;
+
+	if(this.setState.hasError) {
+		return <ErrorIndicator />
+	};
 
 	let preloader = '';
 

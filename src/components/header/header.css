@@ -4,7 +4,8 @@
 }
 
 .header ul {
-	padding-top: 30px;
+	margin-top: 30px;
+	margin-left: 50px;
 }
 
 .header li{
@@ -21,4 +22,21 @@
 .header a {
 	color: #64a50ea6;
 	text-shadow: 0.5px 0.5px 0px #91ff00a6;
+}
+
+/*Media*/
+
+@media(max-width: 582px) {
+	.header {
+		align-items: center;
+		flex-direction: column;
+	} 
+
+	.header h1 {
+		margin: 10px 0;
+	}
+
+	.header ul {
+		margin: 10px 0;
+	}
 }

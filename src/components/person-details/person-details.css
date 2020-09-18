@@ -1,5 +1,35 @@
 .person {
 	margin-top: 0;
 	margin-left: 10px;
-	width: 100%
+	width: 100%;
+	height: 100%;
 }
+
+.person img {
+	width: 300px;
+	padding: 20px;
+	border-radius: 30px;
+}
+
+/*Media*/
+
+@media(max-width: 991px) {
+	.person {
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+}
+
+@media(max-width: 582px) {
+	.person {
+		margin-left: 0;
+	}
+}
+
+@media(max-width: 480px) {
+	.person {
+		padding-bottom: 0px;
+	}
+}
+
